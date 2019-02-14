@@ -1,0 +1,82 @@
+.tabs-bar {
+    background-color: #f1f1f1;
+    border-top: 1px solid #d3d7da;
+    display: flex;
+    justify-content: space-between;
+    
+    .tabs-list {
+        
+        list-style: none;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        // justify-content: flex-start;
+        
+        .tab-item {
+            border-right: 1px solid #d3d7da;
+            border-bottom: 1px solid #d3d7da;
+            background-color: #f8f8f8;
+            display: block;
+            height: 81px;
+            float: left;
+            display: flex;
+            align-items: center;
+            padding: 13px 30px;
+            
+            .tab-item__title {
+                font-size: 24px;
+                color: #4b4b4b;
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+
+            .tab-item__counter {
+                align-self: flex-start;
+                font-size: 16px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #adadad;
+                width: 30px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 50%;
+            }
+            
+            .tab-item__counter--active {
+                background-color: #ff503f;
+            }
+            
+        }
+        
+        .tab-item:nth-last-child(1) {
+            border-top-right-radius: 5px;
+        }
+        
+        .tab-item--active {
+            border-bottom: 1px solid transparent;
+            background-color: #ffffff;
+            
+        }
+    }
+    
+    .tabs-bar__search-bar {
+        border-bottom: 1px solid #d3d7da;
+        flex: 1;
+        padding-left: calc(100vw - 1085px);
+        // padding-left: auto;
+        // padding-right: 30px;
+        // flex-basis: 350px;
+        width: 350px;
+        display: block;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #d3d7da;
+        outline: none;  
+        font-size: 22px;
+        color: #c1c1c1;
+        // margin-left: auto;
+        background-color: #f1f1f1;
+    }
+    
+}

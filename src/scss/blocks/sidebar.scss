@@ -1,0 +1,17 @@
+.sidebar {
+    width: 130px;
+    background-image: url('../img/menu-bg.jpg');
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sidebar-margin-20 {
+        margin-top: 20px;
+    }
+
+    .sidebar-margin-auto {
+        margin-top: auto;
+    }
+}

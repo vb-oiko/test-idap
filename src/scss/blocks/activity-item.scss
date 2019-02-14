@@ -1,0 +1,28 @@
+.activity-item {
+    padding: 25px 30px 26px 30px;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    align-items: center;
+    color: #264f6f;
+
+    & > :first-child {
+        margin-right: 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+
+    &__user {
+        color: #4b4b4b;
+    }
+
+    &__action {
+        color: #909090;
+    }
+
+    &__time {
+        color: #8da5b6;
+        font-size: 13px;
+    }
+}

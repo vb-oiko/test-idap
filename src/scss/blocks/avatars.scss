@@ -1,0 +1,60 @@
+.avatar-large {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        clip-path: circle(50% at center);
+    }
+
+    .avatar-large__counter {
+        position: absolute;
+        right: 0px;
+        top: -10px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #ff503f;
+        color: #ffffff;
+    }
+}
+
+.avatar-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    // margin-top: 10px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        clip-path: circle(50% at center);
+    }
+
+}
+
+.avatar-small--online::after, .avatar-small--offline::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.avatar-small--online::after {
+    background-color: #aacc4e;
+}
+.avatar-small--offline::after {
+    background-color: #c5c5c5;
+}
+

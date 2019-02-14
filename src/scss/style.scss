@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.layout {
+    width: 100%;
+    min-width: 1024px;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+
+    .layout-wrap {
+        width: 100%;
+
+        .main-wrap {
+            display: flex;
+            height: calc(100vh-239px);
+            
+            .tasks {
+                margin: 30px 10px 30px 30px;
+                flex: 1;
+                height: 100%;
+                overflow: hidden;
+                border: 1px solid #dcdcdc;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .activity-wrap {
+                margin: 30px 30px 30px 10px;
+                height: 100%;
+                border: 1px solid #dcdcdc;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+
+                .activity {
+
+                    list-style-type: none;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    padding-inline-start: 0;
+                    overflow: hidden;
+                    flex: 1;
+                }
+
+            }
+
+            .panel-footer {
+                padding: 20px 30px;
+                border-top: 1px solid #dcdcdc;
+                color: #4b4b4b;
+                font-size: 18px;
+                font-weight: 600;
+                flex-shrink: 0;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    margin-left: 6px;
+                    width: 12px;
+                    height: 12px;
+                    background-size: 100%;
+                    transform: rotate(180deg);
+                    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzcuMDY1IiBoZWlnaHQ9IjEzNy4wNjQiIGZpbGw9IiNhNmE2YTYiPjxwYXRoIGQ9Ik01NS4xMiA2OC41MzJsNTEuNjA2LTUxLjYxNGE3LjAwNiA3LjAwNiAwIDAgMCAwLTkuOTExbC00Ljk1NS00Ljk1NmE3LjAwOCA3LjAwOCAwIDAgMC05LjkxIDBMMzAuMzM3IDYzLjU3N2E3LjAxIDcuMDEgMCAwIDAgMCA5LjkxMWw2MS41MjQgNjEuNTIzYTcuMDA3IDcuMDA3IDAgMCAwIDkuOTEgMGw0Ljk1NS00Ljk1NWE3LjAwNiA3LjAwNiAwIDAgMCAwLTkuOTExTDU1LjEyIDY4LjUzMnoiLz48L3N2Zz4=');
+                }
+            }
+        }
+        
+    }
+    
+    @import './blocks/status-bar.scss';
+    @import './blocks/tabs-bar.scss';
+    @import './blocks/tasks.scss';
+    @import './blocks/tasks-item.scss';
+    @import './blocks/icons.scss';
+    @import './blocks/tags.scss';
+    @import './blocks/sidebar.scss';
+    @import './blocks/avatars.scss';
+    @import './blocks/sidebar-buttons.scss';
+    @import './blocks/activity-item.scss';
+    @import './blocks/scrollbar.scss';
+    
+}

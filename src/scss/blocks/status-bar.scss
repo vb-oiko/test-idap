@@ -1,0 +1,34 @@
+.status-bar {
+    background-color: #f1f1f1;
+    height: 97px;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+
+    & > *:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    .status-bar__dashboard {
+        font-size: 16px;
+        font-weight: 600;
+        color: #4b4b4b;
+        margin-right: auto;
+    }
+    
+    .status-bar__users-online {
+        font-size: 14px;
+        font-weight: 600;
+        color: #4b4b4b;
+        display: flex;
+        align-items: center;
+        padding-top: 6.5px;
+        padding-bottom: 6.5px;
+
+        & > *:not(:last-child) {
+            margin-right: 8px;
+        }
+
+    }
+
+}
